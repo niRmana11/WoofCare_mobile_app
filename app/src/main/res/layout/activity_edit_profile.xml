@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:padding="16dp"
+    tools:context=".EditProfileActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dog"
+        android:contentDescription="Profile Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/editDogName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Dog's Name"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintTop_toBottomOf="@id/profileImage"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editDogBreed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Dog's Breed"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintTop_toBottomOf="@id/editDogName"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editDogAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Dog's Age"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintTop_toBottomOf="@id/editDogBreed"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/saveProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@color/buttonTextColor"
+        app:layout_constraintTop_toBottomOf="@id/editDogAge"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

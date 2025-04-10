@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WoofCareApp</string>
+    <string name="dog_name">Buddy</string>
+    <string name="dog_breed">Golden Retriever</string>
+    <string name="dog_age">3 Years Old</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="dogProfile" />
+</resources>
+
+
+
+

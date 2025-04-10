@@ -1,0 +1,160 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/primaryColor">
+
+    <TextView
+        android:id="@+id/titleFeeding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeding Reminders"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextFeeding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter feeding reminder"
+        android:inputType="text"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:padding="14dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/titleFeeding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxFeeding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set reminder"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextFeeding"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/reminderContainerFeeding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxFeeding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:elevation="8dp"
+            android:radius="12dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/reminderNameFeeding1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Breakfast – Serve dog food at 7:30 AM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/reminderCheckBoxFeeding1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:elevation="8dp"
+            android:radius="12dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/reminderNameFeeding2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lunch – Give a healthy snack at 1:00 PM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/reminderCheckBoxFeeding2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:radius="12dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/reminderNameFeeding3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dinner – Feed at 6:30 PM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                   />
+
+                <CheckBox
+                    android:id="@+id/reminderCheckBoxFeeding3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

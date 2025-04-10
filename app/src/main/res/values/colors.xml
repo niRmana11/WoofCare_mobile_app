@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#FFF3CD</color>
+    <color name="secondaryColor">#FF6F61</color>
+    <color name="accentColor">#4CAF50</color>
+    <color name="textColor">#333333</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="iconColor">#673AB7</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="gradientStart">#FF7F50</color>
+    <color name="gradientEnd">#FF1493</color>
+    <color name="gray_light">#D3D3D3</color>
+
+    <color name="buttonColorBlue">#4A90E2</color>
+    <color name="buttonColorGreen">#50E3C2</color>
+    <color name="buttonColorOrange">#FF9F00</color>
+    <color name="buttonColorPurple">#9B4DFF</color>
+
+
+</resources>
+
+
+
