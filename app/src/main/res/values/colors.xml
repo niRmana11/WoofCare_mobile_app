@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    // most used colors
     <color name="primaryColor">#FFF3CD</color>
     <color name="secondaryColor">#FF6F61</color>
     <color name="accentColor">#4CAF50</color>

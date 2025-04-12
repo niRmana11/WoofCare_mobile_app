@@ -29,6 +29,7 @@ class AddReminderActivity : AppCompatActivity() {
             finish()
         }
 
+        // back button
         val backButton: ImageButton = findViewById(R.id.backButtonAdd)
         backButton.setOnClickListener {
             finish()
